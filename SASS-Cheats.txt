@@ -4,3 +4,26 @@
 // Standard Clearfix
 
 @include clearfix;
+
+
+
+// Rounded Block with a reset rule. 
+// E.g. Apply to all blocks then use the reset to switch off on specific blocks
+
+@mixin rounded-block($bg: 'reset'){
+	@if $bg != 'reset' {
+		border-radius: 20px; 
+		-moz-border-radius: 20px; 
+		-webkit-border-radius: 20px;
+		padding: 20px;
+		background: $bg;
+		margin-bottom: 15px;
+	}	@else {
+		border-radius: 0; 
+		-moz-border-radius: 0; 
+		-webkit-border-radius: 0;
+		padding: 0;
+		background: none;
+		margin-bottom: 0;
+	} 
+}

@@ -2,14 +2,12 @@
 
 
 // Standard Clearfix
-
 @include clearfix;
 
 
 
 // Rounded Block with a reset rule. 
 // E.g. Apply to all blocks then use the reset to switch off on specific blocks
-
 @mixin rounded-block($bg: 'reset'){
 	@if $bg != 'reset' {
 		border-radius: 20px; 

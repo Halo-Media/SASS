@@ -1,0 +1,6 @@
+/*** Cheatsheet for Standardised Halo Sass Rules ***/
+
+
+// Standard Clearfix
+
+@include clearfix;
